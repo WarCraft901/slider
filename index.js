@@ -24,14 +24,20 @@ rightBtn.addEventListener('click',function change(){
     changeImage()
 
 });
-
-rightBtn.addEventListener('keydown',(e)=>{
- if(e.key=='d'){
+window.addEventListener('keypress', (e)=>{
+    if(e.key=='d'){
     idx ++;
-
     changeImage();
  }
-});
+
+})
+
+// rightBtn.addEventListener('keydown',(e)=>{
+//  if(e.key=='d'){
+//     idx ++;
+//     changeImage();
+//  }
+// });
 
 leftBtn.addEventListener('click',function change(){
 
@@ -41,10 +47,18 @@ leftBtn.addEventListener('click',function change(){
 
 });
 
-leftBtn.addEventListener('keydown',(e)=>{
+window.addEventListener('keypress', (e)=>{
     if(e.key=='a'){
-       idx --;
+    idx --;
+    changeImage();
+ }
+
+})
+
+// leftBtn.addEventListener('keydown',(e)=>{
+//     if(e.key=='a'){
+//        idx --;
    
-       changeImage();
-    }
-   });
+//        changeImage();
+//     }
+//    });
